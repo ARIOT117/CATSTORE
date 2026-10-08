@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesión | CATSTORE</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body class="login">
+    <header>
+        <div class="header">
+            <div class="marca">
+                <img src="./Imagenes/Logos/Gato kawaii de líneas blancas.png" alt="Logo CATSTORE">
+                <h1>CATSTORE</h1>
+            </div>
+
+            <nav>
+                <a href="./index.html">Inicio</a>
+                <a href="./productos.html">Productos</a>
+                <a href="./nosotros.html">Nosotros</a>
+                <a href="./login.html" aria-current="page">Iniciar sesión</a>
+            </nav>
+
+           
+        </div>
+    </header>
+
+    <main class="pagina-login">
+        <div class="login-ilustracion login-ilustracion-izquierda" aria-hidden="true">
+            <img src="./Imagenes/img-ramdom/login.png" alt="">
+        </div>
+
+        <section class="login-tarjeta" aria-labelledby="login-titulo">
+            <p class="login-etiqueta">Bienvenido de nuevo</p>
+            <h2 id="login-titulo">Iniciar sesión</h2>
+            <p class="login-descripcion">Ingresa tus nombres y apellido, correo y contraseña.</p>
+
+            <form id="login-formulario">
+                <div class="login-campo">
+                    <label for="nombres">Nombres</label>
+                    <input type="text" id="nombres" name="nombres" placeholder="Tus nombres" autocomplete="name" required>
+                </div>
+
+                <div class="login-campo">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" id="apellido" name="apellido" placeholder="Tu apellido" autocomplete="family-name" required>
+                </div>
+
+                <div class="login-campo">
+                    <label for="correo">Correo electrónico</label>
+                    <input type="email" id="correo" name="correo" placeholder="tucorreo@ejemplo.com" autocomplete="email" required>
+                </div>
+
+                <div class="login-campo">
+                    <label for="contrasena">Contraseña</label>
+                    <input type="password" id="contrasena" name="contrasena" placeholder="Tu contraseña" autocomplete="current-password" required>
+                </div>
+
+                <button type="submit">Entrar</button>
+            </form>
+        </section>
+
+        <div class="login-ilustracion login-ilustracion-derecha" aria-hidden="true">
+            <img src="./Imagenes/img-ramdom/login-derecha.png" alt="">
+        </div>
+    </main>
+
+    <footer id="contacto">
+        <div>
+            <h3>CATSTORE</h3>
+            <p>Todo para consentir a tu gato.</p>
+        </div>
+
+        <div>
+            <h3>Contacto</h3>
+            <p>catstore@gmail.com</p>
+            <p>614 120 5926</p>
+        </div>
+
+        <div>
+            <h3>Síguenos</h3>
+            <p>Instagram: @catstore</p>
+        </div>
+    </footer>
+    <script src="JS/login.js" defer></script>
+</body>
+</html>

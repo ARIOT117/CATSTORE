@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos | CATSTORE</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="./JS/script.js" defer></script>
+</head>
+<body class="pagina-productos">
+    <header>
+        <div class="header">
+            <div class="marca">
+                <img src="./Imagenes/Logos/Gato kawaii de líneas blancas.png" alt="Logo CATSTORE">
+                <h1>CATSTORE</h1>
+            </div>
+
+            <nav>
+                <a href="./index.html">Inicio</a>
+                <a href="./productos.html" aria-current="page">Productos</a>
+                <a href="./nosotros.html">Nosotros</a>
+                <a href="./login.html">Iniciar sesión</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="catalogo">
+        <section class="buscador-container" aria-labelledby="titulo-catalogo">
+            <div class="catalogo-presentacion">
+                <h1 id="titulo-catalogo">Busca tus <em>productos</em></h1>
+                <p>Encuentra ese detalle especial para consentir a tu gato.</p>
+                <label class="buscador-campo" for="buscador">
+                    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                        <circle cx="10.8" cy="10.8" r="6.8"></circle>
+                        <path d="m16 16 5 5"></path>
+                    </svg>
+                    <input type="search" class="buscador" id="buscador" aria-label="Buscar productos" placeholder="Buscar productos..." autocomplete="off">
+                </label>
+            </div>
+
+            <div class="catalogo-ilustraciones" aria-hidden="true">
+                <div class="catalogo-ilustracion catalogo-ilustracion-superior">
+                    <img src="./Imagenes/img-ramdom/maxwel.png" alt="">
+                </div>
+                <div class="catalogo-ilustracion catalogo-ilustracion-inferior">
+                    <img src="./Imagenes/img-ramdom/productos.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="catalogo-lista" aria-labelledby="productos-titulo">
+            <div class="catalogo-lista-encabezado">
+                <div>
+                    <span class="buscador-etiqueta">Un capricho para tu michi</span>
+                    <h2 id="productos-titulo">Nuestros productos</h2>
+                </div>
+                <p id="resultado-productos" aria-live="polite"></p>
+            </div>
+            <div id="productos" class="productos-grid"></div>
+        </section>
+    </main>
+
+    <footer id="contacto">
+        <div>
+            <h3>CATSTORE</h3>
+            <p>Todo para consentir a tu gato.</p>
+        </div>
+
+        <div>
+            <h3>Contacto</h3>
+            <p>catstore@gmail.com</p>
+            <p>614 120 5926</p>
+        </div>
+
+        <div>
+            <h3>Síguenos</h3>
+            <p>Instagram: @catstore</p>
+        </div>
+    </footer>
+</body>
+</html>
