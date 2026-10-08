@@ -644,6 +644,52 @@ footer p {
     margin-top: 10px;
 }
 
+/* El icono y el texto forman un solo enlace fácil de pulsar. */
+.enlace-contacto {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    max-width: 100%;
+    min-height: 44px;
+    padding: 4px 0;
+    color: inherit;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.enlace-contacto img {
+    width: 36px;
+    height: 36px;
+    flex-shrink: 0;
+    padding: 6px;
+    background: #fff8ed;
+    border-radius: 50%;
+    object-fit: contain;
+}
+
+.enlace-contacto span {
+    min-width: 0;
+    overflow-wrap: anywhere;
+}
+
+.enlace-contacto-texto {
+    color: inherit;
+    text-underline-offset: 4px;
+}
+
+.enlace-contacto:hover,
+.enlace-contacto:focus-visible {
+    color: #ffe0a6;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.enlace-contacto:focus-visible,
+.enlace-contacto-texto:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 4px;
+}
+
 /* HOME */
 
 .hero {
