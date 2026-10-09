@@ -21,8 +21,9 @@
 9. Pruebas y resultados
 10. Evidencias
 11. Ejecución, Git y despliegue
-12. Limitaciones y mejoras futuras
-13. Conclusiones y procedencia
+12. Optimización de imágenes
+13. Limitaciones y mejoras futuras
+14. Conclusiones y procedencia
 
 ## 1. Introducción y objetivos
 
@@ -96,15 +97,15 @@ CAOTITOS/                      copia independiente del repositorio CATSTORE
 └── REPORTE.md                Este reporte
 ```
 
-Se conservaron las **19 imágenes originales**: 14 se usan en el sitio y 5 quedan en `archivo/`. Las antiguas carpetas vacías se retiraron. Las referencias HTML, CSS y JavaScript apuntan a la nueva ubicación.
+El proyecto conserva **19 recursos gráficos**: 14 imágenes usadas por la web se redimensionaron y convirtieron a WebP; 5 recursos originales sin uso permanecen en `archivo/`. Los PNG anteriores se pueden recuperar del historial de Git. Las referencias HTML, CSS y JavaScript apuntan a la nueva ubicación.
 
 | Carpeta | Cantidad | Ejemplos |
 |---|---:|---|
-| marca | 2 | `logo-gato.png`, `gato-menu-activo.png` |
-| iconos | 3 | `correo.png`, `whatsapp.png`, `instagram.png` |
-| fondos | 1 | `patron-gatos.png` |
-| gatos | 5 | `gato-inicio.png`, `gato-maxwell.png`, `gato-catalogo.png` |
-| productos | 3 | `croquetas-pollo.png`, `raton-travieso.png`, `rascador-scratch-play.png` |
+| marca | 2 | `logo-gato.webp`, `gato-menu-activo.webp` |
+| iconos | 3 | `correo.webp`, `whatsapp.webp`, `instagram.webp` |
+| fondos | 1 | `patron-gatos.webp` |
+| gatos | 5 | `gato-inicio.webp`, `gato-maxwell.webp`, `gato-catalogo.webp` |
+| productos | 3 | `croquetas-pollo.webp`, `raton-travieso.webp`, `rascador-scratch-play.webp` |
 | archivo | 5 | Fondos alternativos, gatos, ilustración y retrato sin uso |
 
 El repositorio de publicación es CATSTORE y la marca visible es CAOTITOS. La copia independiente de trabajo se encuentra en `Escritorio/CAOTITOS`, con su propio directorio `.git` y el remoto correcto.
@@ -178,7 +179,7 @@ Se ejecutó el sitio con un servidor HTTP local y se revisó con el navegador de
 | Comparación de pies | Cuatro bloques idénticos |
 | Enlace activo por documento | Exactamente uno y corresponde a la página |
 | Rutas HTML, imágenes CSS y catálogo JS | Todos los archivos referenciados existen |
-| Inventario de imágenes | 19 originales conservadas y organizadas |
+| Inventario de imágenes | 14 WebP en uso y 5 recursos archivados |
 | Sintaxis de ambos archivos JS | Sin errores en `node --check` |
 | Catálogo inicial | 3 productos |
 | Buscar «ratón» | 1 producto |
@@ -283,21 +284,40 @@ El proyecto de hosting es [ariot1/catstore en Vercel](https://vercel.com/ariot1/
 
 **Verificación del hosting:** el commit de entrega `8c0dd00` obtuvo estado `success` de Vercel, con la descripción «Deployment has completed». Se abrió la URL pública y se comprobó el título, la marca CAOTITOS y la carga de imágenes. La marca del sitio cambió; el nombre técnico del repositorio y la URL de Vercel se conservaron para mantener los enlaces existentes.
 
-## 12. Limitaciones y mejoras futuras
+## 12. Optimización de imágenes
+
+Se midieron los archivos usados antes de modificar el sitio. Las 14 imágenes en uso sumaban **20,05 MiB**. Los iconos de solo 36 píxeles en pantalla medían 1254 × 1254 píxeles y cada uno ocupaba cientos de KiB; el gato que identifica la página activa superaba los 2 MiB.
+
+Se redujeron las dimensiones a las necesarias para su presentación, se conservaron las transparencias y se codificaron en WebP. El logo y los iconos usan compresión sin pérdida; los demás recursos usan calidad 80. Las 14 imágenes nuevas suman **0,75 MiB**, una reducción del **96,3 %** en los archivos de imagen que usa la web. La carga real también depende de la conexión y de la caché del navegador, así que esta cifra representa peso de archivos, no tiempo de carga medido.
+
+| Recurso | Antes | Después |
+|---|---:|---:|
+| Logo | 260 KiB | 5 KiB |
+| Gato de navegación | 2152 KiB | 4 KiB |
+| Imagen principal de Inicio | 2041 KiB | 149 KiB |
+| Patrón del formulario | 1486 KiB | 82 KiB |
+| Rascador del catálogo | 1966 KiB | 84 KiB |
+| Todas las 14 imágenes usadas | 20,05 MiB | 0,75 MiB |
+
+Se actualizaron las referencias de HTML, CSS y JavaScript. El gato principal de Inicio tiene `fetchpriority="high"` para favorecer su carga y las fotos del catálogo conservan `loading="lazy"`. Los cinco recursos sin uso en `archivo/` no afectan el peso descargado por las páginas.
+
+Después de la conversión se abrieron las cuatro páginas en anchos de 1280 y 390 píxeles: todas las imágenes cargaron y ninguna página presentó desbordamiento horizontal. La revisión visual confirmó que el logo, el gato principal y el patrón mantienen un aspecto adecuado. Las imágenes anteriores siguen en el historial de Git para una posible restauración.
+
+## 13. Limitaciones y mejoras futuras
 
 - El formulario no autentica usuarios y no debe recibir credenciales reales.
 - Los productos y existencias son datos de demostración, no un inventario sincronizado.
 - No existen carrito, pedidos ni pagos.
 - No se comprobó la procedencia ni licencia de los recursos originales.
-- Las imágenes originales conservan su tamaño; una siguiente etapa puede crear versiones optimizadas para reducir el peso de descarga.
+- Los cinco recursos del archivo siguen en su formato original, pero no se cargan en las páginas. Si se reutilizan, deben optimizarse antes de publicarlos.
 - La navegación compartida se mantiene en cuatro HTML: el verificador detecta divergencias, pero no las corrige automáticamente.
 - Se puede ampliar la búsqueda para ignorar acentos y añadir filtros por categoría.
 - La información de portada debe completarse con los datos académicos reales.
 
-## 13. Conclusiones y procedencia
+## 14. Conclusiones y procedencia
 
 La entrega integra cuatro páginas con navegación coherente, un catálogo dinámico y un formulario demostrativo. La revisión eliminó la diferencia de enlaces entre pies de página y dejó una organización de imágenes que permite localizar los recursos por su función. El encabezado móvil conserva todos los destinos en una barra visible y se comprobó sin desbordamiento en anchos de 320 y 390 píxeles.
 
-El proyecto permite demostrar el uso de HTML semántico, estilos compartidos, eventos, arreglos, filtros y actualización del DOM. La documentación distingue entre las funciones que realmente existen y las mejoras pendientes, para que el reporte sea verificable a partir de los archivos entregados.
+El proyecto permite demostrar el uso de HTML semántico, estilos compartidos, eventos, arreglos, filtros, actualización del DOM y optimización de recursos para la web. La documentación distingue entre las funciones que realmente existen y las mejoras pendientes, para que el reporte sea verificable a partir de los archivos entregados.
 
 **Fuentes de evidencia:** los cuatro HTML, `CSS/style.css`, `JS/script.js`, `JS/login.js`, el verificador y las capturas incluidas. Los recursos gráficos provienen de la carpeta original del proyecto; no se inventa autoría, licencia ni herramienta de origen. La revisión, organización y documentación de esta entrega se realizaron con asistencia de Codex. Los datos académicos personales no fueron proporcionados.

@@ -25,3 +25,7 @@ La marca visible es **CAOTITOS**. La copia local independiente está en `Escrito
 ## Derechos de uso
 
 Copyright © 2026 ARIOT117. Todos los derechos reservados. Consulta [LICENSE](LICENSE) en el repositorio independiente. El código y los recursos pueden verse públicamente, pero no se concede permiso para reutilizarlos fuera de los usos permitidos por la ley y los términos de GitHub.
+
+## Rendimiento de imágenes
+
+Las 14 imágenes que se usan en la web están redimensionadas y convertidas a WebP: 20,05 MiB antes, 0,75 MiB después. El gato principal tiene prioridad de carga y las fotografías del catálogo cargan al acercarse a la pantalla. Los originales anteriores siguen disponibles en el historial de Git.

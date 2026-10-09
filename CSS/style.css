@@ -110,7 +110,7 @@ nav a[aria-current="page"]::before {
     width: 24px;
     height: 32px;
     flex-shrink: 0;
-    background: url("../assets/img/marca/gato-menu-activo.png") center / contain no-repeat;
+    background: url("../assets/img/marca/gato-menu-activo.webp") center / contain no-repeat;
 }
 
 /* CONTENIDO */
@@ -463,7 +463,7 @@ main {
     isolation: isolate;
     padding: 48px 20px;
     background-color: #f0f0f0;
-    background-image: url("../assets/img/fondos/patron-gatos.png");
+    background-image: url("../assets/img/fondos/patron-gatos.webp");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

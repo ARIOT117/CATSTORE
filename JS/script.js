@@ -6,7 +6,7 @@ const datos = [
         descripcion: "Croquetas crujientes sabor pollo, ideales para la alimentación diaria de gatos adultos. Bolsa de 1.5 kg.",
         precio: 499.90,
         cantidad: 10,
-        imagen: "./assets/img/productos/croquetas-pollo.png",
+        imagen: "./assets/img/productos/croquetas-pollo.webp",
         categoria: "Alimento"
     },
     {
@@ -15,7 +15,7 @@ const datos = [
         descripcion: "Ratoncito suave relleno con catnip que estimula el instinto de juego y caza del gato.",
         precio: 220,
         cantidad: 2,
-        imagen: "./assets/img/productos/raton-travieso.png",
+        imagen: "./assets/img/productos/raton-travieso.webp",
         categoria: "Juguetes"
     },
     {
@@ -24,7 +24,7 @@ const datos = [
         descripcion: " Rascador compacto de cartón con una pelota integrada para que el gato rasque y juegue al mismo tiempo.",
         precio: 32,
         cantidad: 9,
-        imagen: "./assets/img/productos/rascador-scratch-play.png",
+        imagen: "./assets/img/productos/rascador-scratch-play.webp",
         categoria: "Juguetes"
     }
 ];

@@ -30,9 +30,10 @@ for page in sorted(ROOT.glob('*.html')):
 assert len(set(headers)) == 1, 'Encabezados diferentes'
 assert len(set(footers)) == 1, 'Pies diferentes'
 for path in [ROOT/'CSS/style.css', ROOT/'JS/script.js']:
-    for url in re.findall(r'[\"\']([^\"\']+\.(?:png|jpg|jpeg))[\"\']', path.read_text()):
+    for url in re.findall(r'[\"\']([^\"\']+\.(?:png|jpg|jpeg|webp))[\"\']', path.read_text()):
         base = path.parent if path.suffix == '.css' else ROOT
         assert (base / url).is_file(), (path, url)
-images = [p for p in (ROOT/'assets/img').rglob('*') if p.suffix in ('.png','.jpg','.jpeg')]
-assert len(images) == 19, 'Faltan imágenes originales'
+images = [p for p in (ROOT/'assets/img').rglob('*') if p.suffix in ('.png','.jpg','.jpeg','.webp')]
+assert len(images) == 19, 'Faltan imágenes del proyecto'
+assert len([p for p in images if p.suffix == '.webp']) == 14, 'Faltan imágenes optimizadas'
 print('OK: 4 páginas, headers equivalentes, footers idénticos, enlace activo correcto, rutas válidas y 19 imágenes.')
