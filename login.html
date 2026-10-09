@@ -3,42 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iniciar sesión | CATSTORE</title>
+    <title>Iniciar sesión | CAOTITOS</title>
     <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body class="login">
     <header>
         <div class="header">
-            <div class="marca">
-                <img src="./Imagenes/Logos/Gato kawaii de líneas blancas.png" alt="Logo CATSTORE">
-                <h1>CATSTORE</h1>
-            </div>
+            <a class="marca" href="./index.html" aria-label="CAOTITOS, ir al inicio">
+                <img src="./assets/img/marca/logo-gato.png" alt="Logo CAOTITOS">
+                <div class="marca-texto"><h1>CAOTITOS</h1><span>Pequeños gatos, grandes travesuras</span></div>
+            </a>
 
-            <nav>
+            <nav aria-label="Navegación principal">
                 <a href="./index.html">Inicio</a>
                 <a href="./productos.html">Productos</a>
                 <a href="./nosotros.html">Nosotros</a>
-                <a href="./login.html" aria-current="page">Iniciar sesión</a>
+                <a href="./login.html" aria-current="page">Acceder</a>
             </nav>
 
-           
         </div>
     </header>
 
     <main class="pagina-login">
         <div class="login-ilustracion login-ilustracion-izquierda" aria-hidden="true">
-            <img src="./Imagenes/img-ramdom/login.png" alt="">
+            <img src="./assets/img/gatos/gato-login-izquierda.png" alt="">
         </div>
 
         <section class="login-tarjeta" aria-labelledby="login-titulo">
             <p class="login-etiqueta">Bienvenido de nuevo</p>
             <h2 id="login-titulo">Iniciar sesión</h2>
-            <p class="login-descripcion">Ingresa tus nombres y apellido, correo y contraseña.</p>
+            <p class="login-descripcion">Demostración de formulario. Usa datos de ejemplo; no se crea una cuenta.</p>
 
             <form id="login-formulario">
                 <div class="login-campo">
                     <label for="nombres">Nombres</label>
-                    <input type="text" id="nombres" name="nombres" placeholder="Tus nombres" autocomplete="name" required>
+                    <input type="text" id="nombres" name="nombres" placeholder="Tus nombres" autocomplete="given-name" required>
                 </div>
 
                 <div class="login-campo">
@@ -58,30 +57,31 @@
 
                 <button type="submit">Entrar</button>
             </form>
+            <p id="login-resultado" role="status" aria-live="polite"></p>
         </section>
 
         <div class="login-ilustracion login-ilustracion-derecha" aria-hidden="true">
-            <img src="./Imagenes/img-ramdom/login-derecha.png" alt="">
+            <img src="./assets/img/gatos/gato-login-derecha.png" alt="">
         </div>
     </main>
 
     <footer id="contacto">
         <div>
-            <h3>CATSTORE</h3>
+            <h3>CAOTITOS</h3>
             <p>Todo para consentir a tu gato.</p>
         </div>
 
         <div>
             <h3>Contacto</h3>
             <p>
-                <a class="enlace-contacto" href="mailto:catstore@gmail.com?subject=Informaci%C3%B3n%20de%20productos%20CATSTORE&amp;body=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20los%20productos%20de%20CATSTORE.">
-                    <img src="./Imagenes/icono corro.png" alt="" width="36" height="36">
+                <a class="enlace-contacto" href="mailto:catstore@gmail.com?subject=Informaci%C3%B3n%20de%20productos%20CAOTITOS&amp;body=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20los%20productos%20de%20CAOTITOS.">
+                    <img src="./assets/img/iconos/correo.png" alt="" width="36" height="36">
                     <span>catstore@gmail.com</span>
                 </a>
             </p>
             <p>
-                <a class="enlace-contacto" href="https://wa.me/526141205926?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20los%20productos%20de%20CATSTORE." target="_blank" rel="noopener noreferrer">
-                    <img src="./Imagenes/iconowasa.png" alt="" width="36" height="36">
+                <a class="enlace-contacto" href="https://wa.me/526141205926?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20los%20productos%20de%20CAOTITOS." target="_blank" rel="noopener noreferrer">
+                    <img src="./assets/img/iconos/whatsapp.png" alt="" width="36" height="36">
                     <span>WhatsApp: 614 120 5926</span>
                 </a>
             </p>
@@ -90,9 +90,9 @@
         <div>
             <h3>Síguenos</h3>
             <p>
-                <a class="enlace-contacto" href="https://ig.me/m/catstore" target="_blank" rel="noopener noreferrer">
-                    <img src="./Imagenes/icono istagram.png" alt="" width="36" height="36">
-                    <span>Instagram: @catstore</span>
+                <a class="enlace-contacto" href="https://www.instagram.com/diego_at117/" target="_blank" rel="noopener noreferrer">
+                    <img src="./assets/img/iconos/instagram.png" alt="" width="36" height="36">
+                    <span>Instagram: @diego_at117</span>
                 </a>
             </p>
         </div>

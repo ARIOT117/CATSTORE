@@ -14,7 +14,6 @@ body {
     flex-direction: column;
 }
 
-
 /* Los elementos pueden encogerse sin desbordar su columna. */
 img {
     max-width: 100%;
@@ -111,7 +110,7 @@ nav a[aria-current="page"]::before {
     width: 24px;
     height: 32px;
     flex-shrink: 0;
-    background: url("../Imagenes/imagen para header.png") center / contain no-repeat;
+    background: url("../assets/img/marca/gato-menu-activo.png") center / contain no-repeat;
 }
 
 /* CONTENIDO */
@@ -123,7 +122,6 @@ main {
     color: #49372e;
 }
 
-
 .catalogo {
     padding: 48px 24px 88px;
     background:
@@ -131,7 +129,6 @@ main {
         radial-gradient(circle at 94% 66%, #f4ddc8 0, transparent 30%),
         #f8f0e6;
 
-    
 }
 
 .buscador-container {
@@ -246,8 +243,6 @@ main {
 .buscador::placeholder {
     color: #897569;
 }
-
-
 
 .catalogo-ilustraciones {
     position: absolute;
@@ -468,7 +463,7 @@ main {
     isolation: isolate;
     padding: 48px 20px;
     background-color: #f0f0f0;
-    background-image: url("../Imagenes/fondo.png");
+    background-image: url("../assets/img/fondos/patron-gatos.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -934,7 +929,6 @@ footer p {
         padding: 28px 22px;
     }
 
-
     .catalogo {
         padding: 24px 16px 56px;
     }
@@ -1049,4 +1043,58 @@ footer p {
     .producto-info {
         padding: 20px;
     }
+}
+
+/* Confirmación accesible del formulario demostrativo. */
+#login-resultado:not(:empty) {
+    margin-top: 20px;
+    line-height: 1.5;
+    color: #49372e;
+}
+
+/* Identidad compartida y navegación compacta para teléfonos. */
+.marca {
+    color: inherit;
+    text-decoration: none;
+}
+.marca-texto span {
+    display: block;
+    margin-top: 4px;
+    font-size: 12px;
+    letter-spacing: .3px;
+    color: #efddc9;
+}
+.marca:focus-visible {
+    outline: 2px solid #ffe0a6;
+    outline-offset: 6px;
+    border-radius: 8px;
+}
+@media (max-width: 600px) {
+    header { padding: 18px 12px 12px; }
+    .header { gap: 16px; }
+    .marca { gap: 10px; }
+    .marca img { width: 42px; }
+    .marca h1 { font-size: 25px; letter-spacing: .5px; }
+    .marca-texto span { font-size: 10px; letter-spacing: .2px; }
+    nav {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        width: 100%;
+        gap: 4px;
+        padding: 5px;
+        border: 1px solid #ffffff26;
+        border-radius: 16px;
+        background: #49372e38;
+    }
+    nav a {
+        min-height: 46px;
+        padding: 8px 2px;
+        font-size: 12px;
+        border: 0;
+        border-radius: 11px;
+    }
+    nav a[aria-current="page"] { gap: 3px; box-shadow: 0 2px 8px #49372e20; }
+    nav a[aria-current="page"]::before { width: 15px; height: 20px; }
+    nav a:hover { background: #ffffff14; }
+    nav a[aria-current="page"]:hover { background: #fff8ed; }
 }
