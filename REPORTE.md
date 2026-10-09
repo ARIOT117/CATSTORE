@@ -220,7 +220,7 @@ Las imágenes de código se generaron directamente a partir de los archivos fina
 
 ### Interfaz final y pruebas funcionales
 
-Las siguientes 12 capturas se tomaron del sitio CAOTITOS en el navegador. Las vistas de escritorio usan un viewport de 1280 × 1000 y las móviles de 390 × 844. Algunas evidencias muestran una sección desplazada para hacer visible el resultado y el pie de página.
+Las siguientes 13 capturas se tomaron del sitio CAOTITOS en el navegador. Las vistas de escritorio usan un viewport de 1280 × 1000 y las móviles de 390 × 844. Algunas evidencias muestran una sección desplazada para hacer visible el resultado y el pie de página.
 
 **1. Inicio en escritorio:** marca, navegación, presentación y beneficios.
 ![Inicio](docs/capturas/inicio-escritorio.png)
@@ -258,6 +258,9 @@ Las siguientes 12 capturas se tomaron del sitio CAOTITOS en el navegador. Las vi
 **12. Formulario móvil:** campos y botón adaptados al ancho disponible.
 ![Formulario móvil](docs/capturas/login-movil.png)
 
+**13. Producción en Vercel:** la dirección pública ya muestra CAOTITOS.
+![CAOTITOS en Vercel](docs/capturas/produccion-vercel.png)
+
 ## 11. Ejecución, Git y despliegue
 
 Desde la carpeta del proyecto:
@@ -278,7 +281,7 @@ El repositorio de publicación es [ARIOT117/CATSTORE](https://github.com/ARIOT11
 
 El proyecto de hosting es [ariot1/catstore en Vercel](https://vercel.com/ariot1/catstore). Su dirección pública es [catstore-puce.vercel.app](https://catstore-puce.vercel.app). El estado de GitHub confirma que existe integración con Vercel. La raíz de publicación es la raíz del repositorio CATSTORE, donde está `index.html`; no una carpeta de INGENERIA. El sitio es estático y no necesita compilación.
 
-**Verificación del hosting:** el repositorio tiene un estado exitoso de Vercel previo a esta entrega. La actualización se dispara al publicar en `main`; su estado se consulta en las comprobaciones del commit en GitHub. La marca del sitio cambia; el nombre técnico del repositorio y la URL de Vercel se conservan para mantener los enlaces existentes.
+**Verificación del hosting:** el commit de entrega `8c0dd00` obtuvo estado `success` de Vercel, con la descripción «Deployment has completed». Se abrió la URL pública y se comprobó el título, la marca CAOTITOS y la carga de imágenes. La marca del sitio cambió; el nombre técnico del repositorio y la URL de Vercel se conservaron para mantener los enlaces existentes.
 
 ## 12. Limitaciones y mejoras futuras
 
