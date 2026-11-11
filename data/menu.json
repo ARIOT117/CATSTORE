@@ -1,0 +1,209 @@
+[
+  {
+    "id": "cafe",
+    "nombre": "Con café",
+    "nota": "Un abrazo en tu taza.",
+    "items": [
+      {
+        "nombre": "Latte",
+        "precio": 65,
+        "descripcion": ""
+      },
+      {
+        "nombre": "Capuccino",
+        "precio": 65,
+        "descripcion": "Leche espumada y canela"
+      },
+      {
+        "nombre": "Moat",
+        "precio": 65,
+        "descripcion": "Con chocolate Hershey’s"
+      },
+      {
+        "nombre": "Latte de fresa",
+        "precio": 70,
+        "descripcion": "Jarabe de fresa"
+      },
+      {
+        "nombre": "Lavanda latte",
+        "precio": 70,
+        "descripcion": "Esencia de lavanda"
+      },
+      {
+        "nombre": "Latte mariposa",
+        "precio": 70,
+        "descripcion": "Infusión de butterfly pea"
+      },
+      {
+        "nombre": "Dirty chai",
+        "precio": 70,
+        "descripcion": ""
+      }
+    ]
+  },
+  {
+    "id": "sin-cafe",
+    "nombre": "Sin café",
+    "nota": "Todos a $75 · MXN",
+    "items": [
+      {
+        "nombre": "Matcha",
+        "precio": 75,
+        "descripcion": ""
+      },
+      {
+        "nombre": "Taro",
+        "precio": 75,
+        "descripcion": ""
+      },
+      {
+        "nombre": "Matcha fresa",
+        "precio": 75,
+        "descripcion": ""
+      },
+      {
+        "nombre": "Taro fresa",
+        "precio": 75,
+        "descripcion": ""
+      },
+      {
+        "nombre": "Chai",
+        "precio": 75,
+        "descripcion": ""
+      },
+      {
+        "nombre": "Lavanda mariposa azul",
+        "precio": 75,
+        "descripcion": ""
+      }
+    ]
+  },
+  {
+    "id": "frappes",
+    "nombre": "Frappés",
+    "nota": "Leche y crema batida · Todos a $70",
+    "items": [
+      {
+        "nombre": "Frappuchino",
+        "precio": 70,
+        "descripcion": ""
+      },
+      {
+        "nombre": "Chai",
+        "precio": 70,
+        "descripcion": ""
+      },
+      {
+        "nombre": "Taro",
+        "precio": 70,
+        "descripcion": ""
+      },
+      {
+        "nombre": "Matcha",
+        "precio": 70,
+        "descripcion": ""
+      },
+      {
+        "nombre": "Alfalfa",
+        "precio": 70,
+        "descripcion": "Con nieve de vainilla y Oreo"
+      }
+    ]
+  },
+  {
+    "id": "refreshers",
+    "nombre": "Refreshers",
+    "nota": "Con agua mineral · Todos a $65",
+    "items": [
+      {
+        "nombre": "Lichi / blueberry",
+        "precio": 65,
+        "descripcion": "Blueberries macerados y jarabe de lichi"
+      },
+      {
+        "nombre": "Berry peach",
+        "precio": 65,
+        "descripcion": "Durazno en almíbar y un toque de arándano-frambuesa"
+      },
+      {
+        "nombre": "Fresa",
+        "precio": 65,
+        "descripcion": "Con fresas naturales"
+      }
+    ]
+  },
+  {
+    "id": "limonadas",
+    "nombre": "Limonadas",
+    "nota": "Mineral o natural · Todas a $65",
+    "items": [
+      {
+        "nombre": "Rosa",
+        "precio": 65,
+        "descripcion": "Limón con arándano y frambuesa"
+      },
+      {
+        "nombre": "Lavanda",
+        "precio": 65,
+        "descripcion": "Limón amarillo con lavanda"
+      },
+      {
+        "nombre": "Blueberry",
+        "precio": 65,
+        "descripcion": "Limón amarillo con blueberries"
+      },
+      {
+        "nombre": "Fresa menta",
+        "precio": 65,
+        "descripcion": "Limón verde con fresa y menta"
+      },
+      {
+        "nombre": "Mariposa azul",
+        "precio": 65,
+        "descripcion": "Té de butterfly pea con limón que cambia de color"
+      },
+      {
+        "nombre": "Dirty",
+        "precio": 65,
+        "descripcion": "Limón amarillo, miel de agave y un shot de espresso"
+      }
+    ]
+  },
+  {
+    "id": "otras",
+    "nombre": "Otras bebidas",
+    "nota": "Para todos los antojos.",
+    "items": [
+      {
+        "nombre": "Arizona",
+        "precio": 30,
+        "descripcion": "Té verde, sandía, mango o fresa kiwi"
+      },
+      {
+        "nombre": "Agua",
+        "precio": 15,
+        "descripcion": "Botella de 500 ml"
+      },
+      {
+        "nombre": "Té",
+        "precio": 35,
+        "descripcion": "Pregunta por los sabores disponibles"
+      },
+      {
+        "nombre": "Coca-Cola",
+        "precio": 30,
+        "descripcion": "Lata de 355 ml"
+      },
+      {
+        "nombre": "Agua mineral",
+        "precio": 25,
+        "descripcion": "Saborizada: limón verde, limón amarillo o toronja"
+      },
+      {
+        "nombre": "Bebida coreana",
+        "precio": 60,
+        "descripcion": "Incluye vaso sellado con hielo"
+      }
+    ]
+  }
+]

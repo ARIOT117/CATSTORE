@@ -1,0 +1,128 @@
+[
+  {
+    "id": 1,
+    "nombre": "Croquetas de pollo",
+    "descripcion": "Alimento para gato adulto. Bolsa de 1.5 kg.",
+    "categoria": "Alimento",
+    "precio_centavos": 49990,
+    "stock": 10,
+    "imagen": "assets/img/productos/croquetas-pollo.webp",
+    "fuente": "local"
+  },
+  {
+    "id": 2,
+    "nombre": "Ratón Travieso",
+    "descripcion": "Un pequeño cómplice para sus grandes aventuras. Juguete con catnip.",
+    "categoria": "Juguetes",
+    "precio_centavos": 22000,
+    "stock": 12,
+    "imagen": "assets/img/productos/raton-travieso.webp",
+    "fuente": "local"
+  },
+  {
+    "id": 3,
+    "nombre": "Scratch & Play",
+    "descripcion": "Rascador de cartón con pelota para jugar, rascar y repetir.",
+    "categoria": "Juguetes",
+    "precio_centavos": 3200,
+    "stock": 9,
+    "imagen": "assets/img/productos/rascador-scratch-play.webp",
+    "fuente": "local"
+  },
+  {
+    "id": 101,
+    "nombre": "lait chat whyskas",
+    "descripcion": "Whiskas · 600 ml. Datos de Open Pet Food Facts.",
+    "categoria": "Alimento",
+    "precio_centavos": 8900,
+    "stock": 20,
+    "imagen": "assets/img/catalogo-api/5900951251092.webp",
+    "fuente": "Open Pet Food Facts",
+    "codigo": "5900951251092",
+    "imagen_original": "https://images.openpetfoodfacts.org/images/products/590/095/125/1092/front_fr.8.400.jpg"
+  },
+  {
+    "id": 102,
+    "nombre": "Gourmet Delight Ocean Delight Added Collagen",
+    "descripcion": "Gourmet Delight · 960 g (12 x 80 g). Datos de Open Pet Food Facts.",
+    "categoria": "Alimento",
+    "precio_centavos": 16900,
+    "stock": 20,
+    "imagen": "assets/img/catalogo-api/9310768113128.webp",
+    "fuente": "Open Pet Food Facts",
+    "codigo": "9310768113128",
+    "imagen_original": "https://images.openpetfoodfacts.org/images/products/931/076/811/3128/front_en.4.400.jpg"
+  },
+  {
+    "id": 103,
+    "nombre": "Fussy Cat Twice as Tasty Mince & Jelly",
+    "descripcion": "Fussy Cat · 960 g (12 x 80 g). Datos de Open Pet Food Facts.",
+    "categoria": "Alimento",
+    "precio_centavos": 18500,
+    "stock": 20,
+    "imagen": "assets/img/catalogo-api/9319185005238.webp",
+    "fuente": "Open Pet Food Facts",
+    "codigo": "9319185005238",
+    "imagen_original": "https://images.openpetfoodfacts.org/images/products/931/918/500/5238/front_en.4.400.jpg"
+  },
+  {
+    "id": 104,
+    "nombre": "Fussy Cat Grain Free Adult Dry Cat Food Chicken & Turkey & Cranberries 2.5kg",
+    "descripcion": "Fussy Cat · 2.5 kg. Datos de Open Pet Food Facts.",
+    "categoria": "Alimento",
+    "precio_centavos": 34900,
+    "stock": 20,
+    "imagen": "assets/img/catalogo-api/9319185254995.webp",
+    "fuente": "Open Pet Food Facts",
+    "codigo": "9319185254995",
+    "imagen_original": "https://images.openpetfoodfacts.org/images/products/931/918/525/4995/front_en.4.400.jpg"
+  },
+  {
+    "id": 105,
+    "nombre": "Gatos Castrados Salmón",
+    "descripcion": "Biofresh · 7500g. Datos de Open Pet Food Facts.",
+    "categoria": "Alimento",
+    "precio_centavos": 45900,
+    "stock": 20,
+    "imagen": "assets/img/catalogo-api/7908320403309.webp",
+    "fuente": "Open Pet Food Facts",
+    "codigo": "7908320403309",
+    "imagen_original": "https://images.openpetfoodfacts.org/images/products/790/832/040/3309/front_es.3.400.jpg"
+  },
+  {
+    "id": 106,
+    "nombre": "Gatos Castrados Pollo",
+    "descripcion": "Biofresh · 7500g. Datos de Open Pet Food Facts.",
+    "categoria": "Alimento",
+    "precio_centavos": 45900,
+    "stock": 20,
+    "imagen": "assets/img/catalogo-api/7908320403149.webp",
+    "fuente": "Open Pet Food Facts",
+    "codigo": "7908320403149",
+    "imagen_original": "https://images.openpetfoodfacts.org/images/products/790/832/040/3149/front_es.3.400.jpg"
+  },
+  {
+    "id": 107,
+    "nombre": "Party Mix Natural Yums (made with tuna)",
+    "descripcion": "Friskies, Purina · 60 g. Datos de Open Pet Food Facts.",
+    "categoria": "Premios",
+    "precio_centavos": 7900,
+    "stock": 20,
+    "imagen": "assets/img/catalogo-api/0050000294367.webp",
+    "fuente": "Open Pet Food Facts",
+    "codigo": "0050000294367",
+    "imagen_original": "https://images.openpetfoodfacts.org/images/products/005/000/029/4367/front_en.8.400.jpg"
+  },
+  {
+    "id": 108,
+    "nombre": "Paté con buey, hígado y verduras",
+    "descripcion": "Friskies, Purina · 400g. Datos de Open Pet Food Facts.",
+    "categoria": "Alimento",
+    "precio_centavos": 5900,
+    "stock": 20,
+    "imagen": "assets/img/catalogo-api/8410100070605.webp",
+    "fuente": "Open Pet Food Facts",
+    "codigo": "8410100070605",
+    "imagen_original": "https://images.openpetfoodfacts.org/images/products/841/010/007/0605/front_en.6.400.jpg"
+  }
+]

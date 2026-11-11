@@ -1,4 +1,5 @@
-.vercel/
+config.local.php
 .env
 .env.*
-.DS_Store
+.vercel/
+*.log

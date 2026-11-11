@@ -1,0 +1,17 @@
+<?php
+require __DIR__.'/app.php'; $titulo='Crea tu cuenta'; $pagina='registro'; $mensaje=''; $nombre=''; $correo='';
+$continuar=($_GET['continuar']??$_POST['continuar']??'')==='carrito'?'carrito':'pedidos';
+if (usuarioId()) ir($continuar.'.php');
+if ($_SERVER['REQUEST_METHOD']==='POST') {
+    verificarCsrf(); $nombre=trim(is_string($_POST['nombre']??null)?$_POST['nombre']:''); $correo=normalizarCorreo(is_string($_POST['correo']??null)?$_POST['correo']:'');
+    $password=is_string($_POST['contrasena']??null)?$_POST['contrasena']:''; $confirmacion=is_string($_POST['confirmacion']??null)?$_POST['confirmacion']:'';
+    if ($nombre==='' || mb_strlen($nombre)>100 || !filter_var($correo,FILTER_VALIDATE_EMAIL) || strlen($correo)>254) $mensaje='Escribe tu nombre (hasta 100 caracteres) y un correo válido.';
+    elseif (strlen($password)<8 || strlen($password)>72) $mensaje='Usa una contraseña de 8 a 72 bytes (las letras acentuadas pueden ocupar más de uno).';
+    elseif ($password!==$confirmacion) $mensaje='Las contraseñas deben coincidir.';
+    else try {
+        if (crearUsuario($nombre,$correo,$password)) { $u=buscarUsuarioPorCorreo($correo); autenticar($u); aviso('¡Bienvenido, '.$nombre.'! Tu cuenta está lista.'); ir($continuar.'.php'); }
+        else $mensaje='Ya existe una cuenta con ese correo. Puedes iniciar sesión.';
+    } catch (Throwable $ex) { error_log((string)$ex); $mensaje='No pudimos completar el registro. Comprueba que MySQL esté encendido y la base esté instalada. Si ya creaste tu cuenta, intenta iniciar sesión.'; }
+}
+require __DIR__.'/header.php'; ?>
+<main id="contenido" class="contenedor cuenta-layout"><aside class="cuenta-arte"><p class="etiqueta">YA ERES PARTE DEL PLAN</p><h1>Un lugar para ti.<br>Y para tus <em>favoritos.</em></h1><p>Guarda tu carrito y vuelve a ver tus pedidos cuando quieras.</p><img src="assets/img/gatos/gato-login-derecha.webp" alt="" width="350" height="350"></aside><section class="formulario-tarjeta"><span class="icono-circulo"><?= icono('huella') ?></span><h2>Hagamos buenas migas</h2><p>Crea tu cuenta en Snacks and Cats.</p><?php if ($mensaje): ?><div class="error-formulario" role="alert"><?= e($mensaje) ?></div><?php endif; ?><form method="post" action="registro.php"><?= campoCsrf() ?><input type="hidden" name="continuar" value="<?= $continuar ?>"><label for="nombre">Tu nombre</label><input id="nombre" name="nombre" autocomplete="name" maxlength="100" value="<?= e($nombre) ?>" required><label for="correo">Correo electrónico</label><input id="correo" name="correo" type="email" autocomplete="email" maxlength="254" value="<?= e($correo) ?>" required><label for="contrasena">Contraseña</label><div class="campo-password"><input id="contrasena" name="contrasena" type="password" minlength="8" maxlength="72" autocomplete="new-password" aria-describedby="ayuda-clave" required><button type="button" data-ver-password="contrasena" aria-pressed="false">Ver</button></div><small id="ayuda-clave">Usa al menos 8 caracteres.</small><label for="confirmacion">Repite tu contraseña</label><input id="confirmacion" name="confirmacion" type="password" minlength="8" maxlength="72" autocomplete="new-password" required><button class="boton ancho" type="submit">Crear mi cuenta <?= icono('flecha') ?></button></form><p class="formulario-pie">¿Ya tienes cuenta? <a href="login.php?continuar=<?= $continuar ?>">Inicia sesión</a></p></section></main><?php require __DIR__.'/footer.php'; ?>

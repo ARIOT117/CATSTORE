@@ -1,0 +1,178 @@
+{
+  "retrieved_at": "2026-11-05",
+  "endpoint": "https://world.openpetfoodfacts.org/api/v2/search?categories_tags=en%3Acat-foods&page_size=12",
+  "license": "ODbL; product images CC BY-SA where applicable",
+  "response": {
+    "count": 1688,
+    "page": 1,
+    "page_count": 12,
+    "page_size": 12,
+    "products": [
+      {
+        "brands": "Whiskas",
+        "categories_tags": [
+          "en:dairies",
+          "en:milks-liquid-and-powder",
+          "en:milks",
+          "en:cat-food",
+          "en:dog-and-cat-food",
+          "fr:Aliment complémentaire pour chat adulte et chaton de plus de 6 semaines"
+        ],
+        "code": "5900951251092",
+        "image_front_url": "https://images.openpetfoodfacts.org/images/products/590/095/125/1092/front_fr.8.400.jpg",
+        "product_name": "lait chat whyskas",
+        "quantity": "600 ml"
+      },
+      {
+        "brands": "Catmor",
+        "categories_tags": [
+          "en:dog-and-cat-food",
+          "en:cat-food",
+          "en:dry-pet-food",
+          "en:adult-cat-food",
+          "en:dry-cat-food"
+        ],
+        "code": "6001069034436",
+        "product_name": "Dry Adult Cat Food",
+        "quantity": "1.75"
+      },
+      {
+        "brands": "Hill's Prescription Diet",
+        "categories_tags": [
+          "en:dog-and-cat-food",
+          "en:cat-food",
+          "en:dry-pet-food",
+          "en:dry-cat-food"
+        ],
+        "code": "0052742005782",
+        "image_front_url": "https://images.openpetfoodfacts.org/images/products/005/274/200/5782/front_en.4.400.jpg",
+        "product_name": "Hill's Prescription Diet t/d Dental Care Chicken Flavor",
+        "quantity": "3 kg"
+      },
+      {
+        "brands": "Gourmet Delight",
+        "categories_tags": [
+          "en:dog-and-cat-food",
+          "en:cat-food",
+          "en:wet-pet-food",
+          "en:wet-cat-food"
+        ],
+        "code": "9310768113128",
+        "image_front_url": "https://images.openpetfoodfacts.org/images/products/931/076/811/3128/front_en.4.400.jpg",
+        "product_name": "Gourmet Delight Ocean Delight Added Collagen",
+        "quantity": "960 g (12 x 80 g)"
+      },
+      {
+        "brands": "Fussy Cat",
+        "categories_tags": [
+          "en:dog-and-cat-food",
+          "en:cat-food",
+          "en:wet-pet-food",
+          "en:wet-cat-food"
+        ],
+        "code": "9319185005238",
+        "image_front_url": "https://images.openpetfoodfacts.org/images/products/931/918/500/5238/front_en.4.400.jpg",
+        "product_name": "Fussy Cat Twice as Tasty Mince & Jelly",
+        "quantity": "960 g (12 x 80 g)"
+      },
+      {
+        "brands": "Fussy Cat",
+        "categories_tags": [
+          "en:dog-and-cat-food",
+          "en:cat-food",
+          "en:dry-pet-food",
+          "en:dry-cat-food"
+        ],
+        "code": "9319185254995",
+        "image_front_url": "https://images.openpetfoodfacts.org/images/products/931/918/525/4995/front_en.4.400.jpg",
+        "product_name": "Fussy Cat Grain Free Adult Dry Cat Food Chicken & Turkey & Cranberries 2.5kg",
+        "quantity": "2.5 kg"
+      },
+      {
+        "brands": "Biofresh",
+        "categories_tags": [
+          "en:dog-and-cat-food",
+          "en:cat-food",
+          "en:castrated-cat-food",
+          "es:Gatos"
+        ],
+        "code": "7908320403309",
+        "image_front_url": "https://images.openpetfoodfacts.org/images/products/790/832/040/3309/front_es.3.400.jpg",
+        "product_name": "Gatos Castrados Salmón",
+        "product_name_es": "Gatos Castrados Salmón",
+        "quantity": "7500g"
+      },
+      {
+        "brands": "Biofresh",
+        "categories_tags": [
+          "en:dog-and-cat-food",
+          "en:cat-food",
+          "en:castrated-cat-food"
+        ],
+        "code": "7908320403149",
+        "image_front_url": "https://images.openpetfoodfacts.org/images/products/790/832/040/3149/front_es.3.400.jpg",
+        "product_name": "Gatos Castrados Pollo",
+        "product_name_es": "Gatos Castrados Pollo",
+        "quantity": "7500g"
+      },
+      {
+        "brands": "Friskies, Purina",
+        "categories_tags": [
+          "en:dog-and-cat-food",
+          "en:cat-food",
+          "en:cat-biscuits"
+        ],
+        "code": "0050000294367",
+        "ecoscore_tags": [
+          "unknown"
+        ],
+        "image_front_url": "https://images.openpetfoodfacts.org/images/products/005/000/029/4367/front_en.8.400.jpg",
+        "product_name": "Party Mix Natural Yums (made with tuna)",
+        "quantity": "60 g"
+      },
+      {
+        "brands": "Friskies, Purina",
+        "categories_tags": [
+          "en:dog-and-cat-food",
+          "en:cat-food",
+          "en:wet-pet-food",
+          "en:wet-cat-food"
+        ],
+        "code": "8410100070605",
+        "image_front_url": "https://images.openpetfoodfacts.org/images/products/841/010/007/0605/front_en.6.400.jpg",
+        "product_name": "Paté con buey, hígado y verduras",
+        "product_name_es": "Paté con buey, hígado y verduras",
+        "quantity": "400g"
+      },
+      {
+        "brands": "Friskies, Purina",
+        "categories_tags": [
+          "en:dog-and-cat-food",
+          "en:cat-food",
+          "en:dry-pet-food",
+          "en:dry-cat-food"
+        ],
+        "code": "7613033693922",
+        "ecoscore_tags": [
+          "unknown"
+        ],
+        "image_front_url": "https://images.openpetfoodfacts.org/images/products/761/303/369/3922/front_fr.4.400.jpg",
+        "product_name": "Friskies"
+      },
+      {
+        "brands": "Friskies, Purina",
+        "categories_tags": [
+          "en:dog-and-cat-food",
+          "en:cat-food",
+          "en:dry-pet-food",
+          "en:dry-cat-food"
+        ],
+        "code": "3256228408297",
+        "image_front_url": "https://images.openpetfoodfacts.org/images/products/325/622/840/8297/front_en.18.400.jpg",
+        "product_name": "Junior",
+        "quantity": ""
+      }
+    ],
+    "skip": 0
+  }
+}
