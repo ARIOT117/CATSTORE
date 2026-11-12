@@ -40,11 +40,7 @@ try {
 }
 
 try {
-    $q = obtenerConexion()->prepare(
-        'SELECT archivo, tipo, tamano, creado_en FROM sc_mascotas WHERE usuario_id=? LIMIT 1',
-    );
-    $q->execute([usuarioId()]);
-    $mascota = $q->fetch() ?: null;
+    $mascota = fotoCuenta();
 } catch (Throwable $ex) {
     error_log((string) $ex);
     $errorMascota =
@@ -89,11 +85,13 @@ require __DIR__ . '/header.php';
         <div class="michi-cuenta-texto">
             <p class="etiqueta">UN RECUERDO PARA TU CUENTA</p>
             <h2 id="titulo-michi">La foto de tu michi.</h2>
-            <p>
-                Sube una foto de tu compañero. Se guarda en un espacio privado y solo se muestra
-                cuando inicias sesión.
-            </p>
-            <p class="michi-cuenta-ayuda">JPG, PNG o WebP · máximo 2 MB · mínimo 20 × 20 px.</p>
+            <?php if ($mascota): ?>
+                <p>Tu compañero también aparece en «Mi cuenta», para acompañarte por el sitio.</p>
+                <p class="michi-cuenta-ayuda">¿Otra foto? Elimina esta primero para elegir una nueva.</p>
+            <?php else: ?>
+                <p>Un pequeño retrato de tu compañero para darle su toque a tu cuenta.</p>
+                <p class="michi-cuenta-ayuda">Solo tú puedes verla · JPG, PNG o WebP · máximo 2 MB.</p>
+            <?php endif; ?>
         </div>
 
         <div class="michi-cuenta-archivo">
@@ -104,10 +102,10 @@ require __DIR__ . '/header.php';
             <?php if ($mascota): ?>
                 <figure class="michi-foto">
                     <img
-                        src="mascota.php?ver=<?= (int) strtotime((string) $mascota['creado_en']) ?>"
+                        src="<?= e(urlFotoCuenta($mascota)) ?>"
                         alt="Foto de tu michi"
-                        width="240"
-                        height="240"
+                        width="112"
+                        height="112"
                     />
                     <figcaption><?= e($tipoMascota) ?> · <?= e($tamanoMascota) ?></figcaption>
                 </figure>
@@ -116,23 +114,22 @@ require __DIR__ . '/header.php';
                     <input type="hidden" name="accion" value="eliminar" />
                     <button class="enlace-boton eliminar" type="submit">Eliminar foto</button>
                 </form>
-            <?php endif; ?>
+            <?php elseif (!$errorMascota): ?>
 
-            <form action="mascota.php" method="post" enctype="multipart/form-data" class="form-archivo">
-                <?= campoCsrf() ?>
-                <input type="hidden" name="accion" value="subir" />
-                <label for="foto-michi">
-                    <?= $mascota ? 'Cambiar la foto' : 'Elegir una foto' ?>
-                </label>
-                <input
-                    id="foto-michi"
-                    name="foto"
-                    type="file"
-                    accept="image/jpeg,image/png,image/webp"
-                    required
-                />
-                <button class="boton" type="submit">Guardar foto</button>
-            </form>
+                <form action="mascota.php" method="post" enctype="multipart/form-data" class="form-archivo">
+                    <?= campoCsrf() ?>
+                    <input type="hidden" name="accion" value="subir" />
+                    <label for="foto-michi">Elegir una foto</label>
+                    <input
+                        id="foto-michi"
+                        name="foto"
+                        type="file"
+                        accept="image/jpeg,image/png,image/webp"
+                        required
+                    />
+                    <button class="boton" type="submit">Guardar foto</button>
+                </form>
+            <?php endif; ?>
         </div>
     </section>
 

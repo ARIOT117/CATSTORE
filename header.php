@@ -17,6 +17,13 @@ $enlacesNavegacion = [
     'productos' => ['productos.php', 'Tiendita'],
 ];
 
+$avatarCuenta = null;
+try {
+    $avatarCuenta = fotoCuenta();
+} catch (Throwable $errorAvatar) {
+    error_log((string) $errorAvatar);
+}
+
 $cuentaActiva = in_array($pagina, ['login', 'registro', 'pedidos'], true);
 ?>
 <!doctype html>
@@ -87,7 +94,17 @@ $cuentaActiva = in_array($pagina, ['login', 'registro', 'pedidos'], true);
                         href="<?= usuarioId() ? 'pedidos.php' : 'login.php' ?>"
                         <?= $cuentaActiva ? ' aria-current="page"' : '' ?>
                     >
-                        <?= icono('usuario') ?>
+                        <?php if ($avatarCuenta): ?>
+                            <img
+                                class="avatar-cuenta"
+                                src="<?= e(urlFotoCuenta($avatarCuenta)) ?>"
+                                alt=""
+                                width="32"
+                                height="32"
+                            />
+                        <?php else: ?>
+                            <?= icono('usuario') ?>
+                        <?php endif; ?>
                         <span><?= usuarioId() ? 'Mi cuenta' : 'Acceder' ?></span>
                     </a>
                     <a

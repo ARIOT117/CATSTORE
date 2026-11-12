@@ -2845,7 +2845,7 @@ html:not([data-js]) :is(.filtros, .busqueda, .catalogo-opciones, [data-ver-passw
 /* Foto privada del michi en la cuenta. */
 .michi-cuenta {
   display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 320px);
   gap: 32px;
   align-items: center;
   margin-bottom: 42px;
@@ -2878,10 +2878,10 @@ html:not([data-js]) :is(.filtros, .busqueda, .catalogo-opciones, [data-ver-passw
   text-align: center;
 }
 .michi-foto img {
-  width: 200px;
-  height: 200px;
+  width: 112px;
+  height: 112px;
   object-fit: cover;
-  border: 4px solid var(--carbon);
+  border: 1px solid var(--linea);
   border-radius: 50%;
   background: var(--carbon);
 }
@@ -2991,8 +2991,8 @@ html:not([data-js]) :is(.filtros, .busqueda, .catalogo-opciones, [data-ver-passw
     font-size: 29px;
   }
   .michi-foto img {
-    width: 168px;
-    height: 168px;
+    width: 104px;
+    height: 104px;
   }
   .titulo-pedidos {
     font-size: 26px;
@@ -3041,4 +3041,26 @@ html:not([data-js]) :is(.filtros, .busqueda, .catalogo-opciones, [data-ver-passw
   50% {
     transform: translateY(-4px);
   }
+}
+
+/* El avatar conserva el mismo espacio y acceso táctil en todas las páginas. */
+.acceso .avatar-cuenta {
+  display: block;
+  width: 32px;
+  height: 32px;
+  flex: 0 0 32px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid var(--linea);
+  background: var(--blanco);
+}
+.form-archivo input[type='file']::file-selector-button {
+  padding: 9px 12px;
+  margin-right: 10px;
+  border: 0;
+  border-radius: 6px;
+  background: var(--linea);
+  color: var(--carbon);
+  font: inherit;
+  cursor: pointer;
 }

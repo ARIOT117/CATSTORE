@@ -209,7 +209,7 @@ status, body, _ = b.post_file(
 )
 assert status == 200 and "Foto guardada" in body, body[:400]
 assert "mascota.php?ver=" in body
-rutaFoto = re.search(r'src="(mascota\.php\?ver=\d+)"', body)[1]
+rutaFoto = re.search(r'src="(mascota\.php\?ver=[a-f0-9]+)"', body)[1]
 status, servida = b.get_raw(rutaFoto)
 assert status == 200 and servida == foto
 print("OK: foto del michi subida, guardada y servida con la sesión.")

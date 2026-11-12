@@ -70,6 +70,30 @@ function usuarioId(): int
     return (int) ($_SESSION['usuario_id'] ?? 0);
 }
 
+/** Foto de la cuenta: una consulta por usuario en cada petición. */
+function fotoCuenta(): ?array
+{
+    static $fotos = [];
+    $id = usuarioId();
+    if (!$id) {
+        return null;
+    }
+    if (!array_key_exists($id, $fotos)) {
+        $q = obtenerConexion()->prepare(
+            'SELECT archivo, tipo, tamano, creado_en FROM sc_mascotas WHERE usuario_id=? LIMIT 1',
+        );
+        $q->execute([$id]);
+        $fotos[$id] = $q->fetch() ?: null;
+    }
+    return $fotos[$id];
+}
+
+/** URL privada versionada: cambia al subir una imagen diferente. */
+function urlFotoCuenta(array $foto): string
+{
+    return 'mascota.php?ver=' . substr(hash('sha256', $foto['archivo']), 0, 16);
+}
+
 /** Cierra la sesión y elimina también la cookie del navegador. */
 function cerrarSesion(): void
 {
