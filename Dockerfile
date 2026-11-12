@@ -4,11 +4,12 @@ FROM php:8.3-apache-bookworm
 RUN apt-get update \
     && apt-get install -y --no-install-recommends libonig-dev libcurl4-openssl-dev \
     && docker-php-ext-install -j2 pdo_mysql mbstring curl \
-    && a2enmod headers rewrite \
+    && a2dismod -f mpm_event mpm_worker \
+    && a2enmod mpm_prefork headers rewrite \
     && rm -rf /var/lib/apt/lists/*
 
 COPY deployment/apache.conf /etc/apache2/conf-available/snacks.conf
-RUN a2enconf snacks
+RUN a2enconf snacks && apache2ctl -t
 COPY --chown=www-data:www-data . /var/www/html/
 COPY deployment/entrypoint.sh /usr/local/bin/snacks-start
 RUN chmod 755 /usr/local/bin/snacks-start \
