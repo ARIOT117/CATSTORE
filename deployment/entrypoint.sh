@@ -36,6 +36,8 @@ until php scripts/instalar.php > /tmp/snacks-instalacion.log 2>&1; do
 done
 cat /tmp/snacks-instalacion.log
 # Validar también con el entorno real del servicio, antes de iniciar Apache.
+ls -l /etc/apache2/mods-enabled/*mpm*
+grep -R LoadModule /etc/apache2/conf-enabled /etc/apache2/sites-enabled || true
 apache2ctl -t
 # Cargar explícitamente el entorno de Debian antes del proceso en primer plano.
 . /etc/apache2/envvars
