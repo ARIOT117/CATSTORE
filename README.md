@@ -191,3 +191,9 @@ Playwright necesita un Chromium instalado; se puede indicar su ejecutable con `C
 ## Revisión de estructura y personajes únicos
 
 La simplificación posterior se documenta en `docs/revision-premium.md`. La guía de archivos está en `docs/guia-del-codigo.md` y las capturas actuales en `docs/capturas-premium/`. Los gatos se asignan una sola vez desde `data/personajes.php`; el pie conserva un único enlace de WhatsApp. Las pantallas, formularios, sesiones, datos y flujo de fotos de cuenta siguen usando la lógica existente.
+
+## Publicación completa
+
+El despliegue PHP/MySQL está preparado para Railway con `Dockerfile`, `railway.json` y `deployment/`. Consulta `docs/railway.md` para las referencias de MySQL, los volúmenes y las comprobaciones. Las credenciales locales y fotos privadas quedan fuera de Git y de la imagen Docker.
+
+Vercel se mantiene pausado para las nuevas versiones PHP mediante `vercel.json`; su publicación anterior no representa el backend completo. La web completa se entrega desde el alojamiento PHP una vez configurado y verificado.

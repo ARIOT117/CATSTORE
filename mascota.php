@@ -21,11 +21,20 @@ $tiposPermitidos = [
     'image/webp' => 'webp',
 ];
 
-$carpetaMascotas = __DIR__ . '/data/mascotas';
+/** Almacenamiento local por defecto; en Railway se usa un volumen fuera de la web. */
+function carpetaMascotas(): string
+{
+    $configurada = getenv('CATSTORE_UPLOAD_DIR');
+    return $configurada !== false && $configurada !== ''
+        ? rtrim($configurada, '/')
+        : __DIR__ . '/data/mascotas';
+}
+
+$carpetaMascotas = carpetaMascotas();
 
 function rutaMascota(string $archivo): string
 {
-    return __DIR__ . '/data/mascotas/' . basename($archivo);
+    return carpetaMascotas() . '/' . basename($archivo);
 }
 
 function borrarMascota(string $archivo): void
@@ -114,7 +123,9 @@ if ($accion !== 'subir') {
 $archivo = $_FILES['foto'] ?? null;
 
 if (!is_array($archivo) || ($archivo['error'] ?? UPLOAD_ERR_NO_FILE) !== UPLOAD_ERR_OK) {
-    $codigo = is_array($archivo) ? (int) ($archivo['error'] ?? UPLOAD_ERR_NO_FILE) : UPLOAD_ERR_NO_FILE;
+    $codigo = is_array($archivo)
+        ? (int) ($archivo['error'] ?? UPLOAD_ERR_NO_FILE)
+        : UPLOAD_ERR_NO_FILE;
     $mensaje =
         $codigo === UPLOAD_ERR_INI_SIZE || $codigo === UPLOAD_ERR_FORM_SIZE
             ? 'La foto supera el tamaño permitido de 2 MB.'
@@ -162,7 +173,11 @@ if (
     ir('pedidos.php#michi');
 }
 
-if (!is_dir($carpetaMascotas) && !mkdir($carpetaMascotas, 0755, true) && !is_dir($carpetaMascotas)) {
+if (
+    !is_dir($carpetaMascotas) &&
+    !mkdir($carpetaMascotas, 0755, true) &&
+    !is_dir($carpetaMascotas)
+) {
     error_log('No se pudo crear la carpeta data/mascotas.');
     aviso('No pudimos preparar el almacenamiento de la foto.', 'error');
     ir('pedidos.php#michi');
