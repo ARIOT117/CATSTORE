@@ -35,4 +35,8 @@ until php scripts/instalar.php > /tmp/snacks-instalacion.log 2>&1; do
     sleep 2
 done
 cat /tmp/snacks-instalacion.log
-exec apache2-foreground
+# Validar también con el entorno real del servicio, antes de iniciar Apache.
+apache2ctl -t
+# Cargar explícitamente el entorno de Debian antes del proceso en primer plano.
+. /etc/apache2/envvars
+exec /usr/sbin/apache2 -D FOREGROUND
