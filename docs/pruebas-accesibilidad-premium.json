@@ -1,0 +1,92 @@
+[
+  {
+    "width": 1440,
+    "route": "index.php",
+    "violations": [],
+    "incomplete": []
+  },
+  {
+    "width": 1440,
+    "route": "menu.php",
+    "violations": [],
+    "incomplete": [
+      "color-contrast"
+    ]
+  },
+  {
+    "width": 1440,
+    "route": "nosotros.php",
+    "violations": [],
+    "incomplete": []
+  },
+  {
+    "width": 1440,
+    "route": "productos.php",
+    "violations": [],
+    "incomplete": []
+  },
+  {
+    "width": 1440,
+    "route": "login.php",
+    "violations": [],
+    "incomplete": []
+  },
+  {
+    "width": 1440,
+    "route": "registro.php",
+    "violations": [],
+    "incomplete": []
+  },
+  {
+    "width": 1440,
+    "route": "carrito.php",
+    "violations": [],
+    "incomplete": []
+  },
+  {
+    "width": 390,
+    "route": "index.php",
+    "violations": [],
+    "incomplete": [
+      "color-contrast"
+    ]
+  },
+  {
+    "width": 390,
+    "route": "menu.php",
+    "violations": [],
+    "incomplete": [
+      "color-contrast"
+    ]
+  },
+  {
+    "width": 390,
+    "route": "nosotros.php",
+    "violations": [],
+    "incomplete": []
+  },
+  {
+    "width": 390,
+    "route": "productos.php",
+    "violations": [],
+    "incomplete": []
+  },
+  {
+    "width": 390,
+    "route": "login.php",
+    "violations": [],
+    "incomplete": []
+  },
+  {
+    "width": 390,
+    "route": "registro.php",
+    "violations": [],
+    "incomplete": []
+  },
+  {
+    "width": 390,
+    "route": "carrito.php",
+    "violations": [],
+    "incomplete": []
+  }
+]

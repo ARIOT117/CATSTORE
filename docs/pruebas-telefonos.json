@@ -1,0 +1,709 @@
+[
+  {
+    "width": 320,
+    "height": 667,
+    "route": "index.php",
+    "overflow": false,
+    "brandOverlap": false,
+    "inputs": [],
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "width": 320,
+    "height": 667,
+    "route": "menu.php",
+    "overflow": false,
+    "brandOverlap": false,
+    "inputs": [],
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "width": 320,
+    "height": 667,
+    "route": "nosotros.php",
+    "overflow": false,
+    "brandOverlap": false,
+    "inputs": [],
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "width": 320,
+    "height": 667,
+    "route": "productos.php",
+    "overflow": false,
+    "brandOverlap": false,
+    "inputs": [
+      {
+        "font": 16,
+        "id": "buscador"
+      }
+    ],
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "width": 320,
+    "height": 667,
+    "route": "login.php",
+    "overflow": false,
+    "brandOverlap": false,
+    "inputs": [
+      {
+        "font": 16,
+        "id": "correo"
+      },
+      {
+        "font": 16,
+        "id": "contrasena"
+      }
+    ],
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "width": 320,
+    "height": 667,
+    "route": "registro.php",
+    "overflow": false,
+    "brandOverlap": false,
+    "inputs": [
+      {
+        "font": 16,
+        "id": "nombre"
+      },
+      {
+        "font": 16,
+        "id": "correo"
+      },
+      {
+        "font": 16,
+        "id": "contrasena"
+      },
+      {
+        "font": 16,
+        "id": "confirmacion"
+      }
+    ],
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "width": 320,
+    "height": 667,
+    "route": "carrito.php",
+    "overflow": false,
+    "brandOverlap": false,
+    "inputs": [],
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "width": 360,
+    "height": 800,
+    "route": "index.php",
+    "overflow": false,
+    "brandOverlap": false,
+    "inputs": [],
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "width": 360,
+    "height": 800,
+    "route": "menu.php",
+    "overflow": false,
+    "brandOverlap": false,
+    "inputs": [],
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "width": 360,
+    "height": 800,
+    "route": "nosotros.php",
+    "overflow": false,
+    "brandOverlap": false,
+    "inputs": [],
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "width": 360,
+    "height": 800,
+    "route": "productos.php",
+    "overflow": false,
+    "brandOverlap": false,
+    "inputs": [
+      {
+        "font": 16,
+        "id": "buscador"
+      }
+    ],
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "width": 360,
+    "height": 800,
+    "route": "login.php",
+    "overflow": false,
+    "brandOverlap": false,
+    "inputs": [
+      {
+        "font": 16,
+        "id": "correo"
+      },
+      {
+        "font": 16,
+        "id": "contrasena"
+      }
+    ],
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "width": 360,
+    "height": 800,
+    "route": "registro.php",
+    "overflow": false,
+    "brandOverlap": false,
+    "inputs": [
+      {
+        "font": 16,
+        "id": "nombre"
+      },
+      {
+        "font": 16,
+        "id": "correo"
+      },
+      {
+        "font": 16,
+        "id": "contrasena"
+      },
+      {
+        "font": 16,
+        "id": "confirmacion"
+      }
+    ],
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "width": 360,
+    "height": 800,
+    "route": "carrito.php",
+    "overflow": false,
+    "brandOverlap": false,
+    "inputs": [],
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "route": "index.php",
+    "overflow": false,
+    "brandOverlap": false,
+    "inputs": [],
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "route": "menu.php",
+    "overflow": false,
+    "brandOverlap": false,
+    "inputs": [],
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "route": "nosotros.php",
+    "overflow": false,
+    "brandOverlap": false,
+    "inputs": [],
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "route": "productos.php",
+    "overflow": false,
+    "brandOverlap": false,
+    "inputs": [
+      {
+        "font": 16,
+        "id": "buscador"
+      }
+    ],
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "route": "login.php",
+    "overflow": false,
+    "brandOverlap": false,
+    "inputs": [
+      {
+        "font": 16,
+        "id": "correo"
+      },
+      {
+        "font": 16,
+        "id": "contrasena"
+      }
+    ],
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "route": "registro.php",
+    "overflow": false,
+    "brandOverlap": false,
+    "inputs": [
+      {
+        "font": 16,
+        "id": "nombre"
+      },
+      {
+        "font": 16,
+        "id": "correo"
+      },
+      {
+        "font": 16,
+        "id": "contrasena"
+      },
+      {
+        "font": 16,
+        "id": "confirmacion"
+      }
+    ],
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "route": "carrito.php",
+    "overflow": false,
+    "brandOverlap": false,
+    "inputs": [],
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "width": 430,
+    "height": 932,
+    "route": "index.php",
+    "overflow": false,
+    "brandOverlap": false,
+    "inputs": [],
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "width": 430,
+    "height": 932,
+    "route": "menu.php",
+    "overflow": false,
+    "brandOverlap": false,
+    "inputs": [],
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "width": 430,
+    "height": 932,
+    "route": "nosotros.php",
+    "overflow": false,
+    "brandOverlap": false,
+    "inputs": [],
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "width": 430,
+    "height": 932,
+    "route": "productos.php",
+    "overflow": false,
+    "brandOverlap": false,
+    "inputs": [
+      {
+        "font": 16,
+        "id": "buscador"
+      }
+    ],
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "width": 430,
+    "height": 932,
+    "route": "login.php",
+    "overflow": false,
+    "brandOverlap": false,
+    "inputs": [
+      {
+        "font": 16,
+        "id": "correo"
+      },
+      {
+        "font": 16,
+        "id": "contrasena"
+      }
+    ],
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "width": 430,
+    "height": 932,
+    "route": "registro.php",
+    "overflow": false,
+    "brandOverlap": false,
+    "inputs": [
+      {
+        "font": 16,
+        "id": "nombre"
+      },
+      {
+        "font": 16,
+        "id": "correo"
+      },
+      {
+        "font": 16,
+        "id": "contrasena"
+      },
+      {
+        "font": 16,
+        "id": "confirmacion"
+      }
+    ],
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "width": 430,
+    "height": 932,
+    "route": "carrito.php",
+    "overflow": false,
+    "brandOverlap": false,
+    "inputs": [],
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "width": 667,
+    "height": 375,
+    "route": "index.php",
+    "overflow": false,
+    "brandOverlap": false,
+    "inputs": [],
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "width": 667,
+    "height": 375,
+    "route": "menu.php",
+    "overflow": false,
+    "brandOverlap": false,
+    "inputs": [],
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "width": 667,
+    "height": 375,
+    "route": "nosotros.php",
+    "overflow": false,
+    "brandOverlap": false,
+    "inputs": [],
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "width": 667,
+    "height": 375,
+    "route": "productos.php",
+    "overflow": false,
+    "brandOverlap": false,
+    "inputs": [
+      {
+        "font": 16,
+        "id": "buscador"
+      }
+    ],
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "width": 667,
+    "height": 375,
+    "route": "login.php",
+    "overflow": false,
+    "brandOverlap": false,
+    "inputs": [
+      {
+        "font": 16,
+        "id": "correo"
+      },
+      {
+        "font": 16,
+        "id": "contrasena"
+      }
+    ],
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "width": 667,
+    "height": 375,
+    "route": "registro.php",
+    "overflow": false,
+    "brandOverlap": false,
+    "inputs": [
+      {
+        "font": 16,
+        "id": "nombre"
+      },
+      {
+        "font": 16,
+        "id": "correo"
+      },
+      {
+        "font": 16,
+        "id": "contrasena"
+      },
+      {
+        "font": 16,
+        "id": "confirmacion"
+      }
+    ],
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "width": 667,
+    "height": 375,
+    "route": "carrito.php",
+    "overflow": false,
+    "brandOverlap": false,
+    "inputs": [],
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "width": 844,
+    "height": 390,
+    "route": "index.php",
+    "overflow": false,
+    "brandOverlap": false,
+    "inputs": [],
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "width": 844,
+    "height": 390,
+    "route": "menu.php",
+    "overflow": false,
+    "brandOverlap": false,
+    "inputs": [],
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "width": 844,
+    "height": 390,
+    "route": "nosotros.php",
+    "overflow": false,
+    "brandOverlap": false,
+    "inputs": [],
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "width": 844,
+    "height": 390,
+    "route": "productos.php",
+    "overflow": false,
+    "brandOverlap": false,
+    "inputs": [
+      {
+        "font": 14,
+        "id": "buscador"
+      }
+    ],
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "width": 844,
+    "height": 390,
+    "route": "login.php",
+    "overflow": false,
+    "brandOverlap": false,
+    "inputs": [
+      {
+        "font": 16,
+        "id": "correo"
+      },
+      {
+        "font": 16,
+        "id": "contrasena"
+      }
+    ],
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "width": 844,
+    "height": 390,
+    "route": "registro.php",
+    "overflow": false,
+    "brandOverlap": false,
+    "inputs": [
+      {
+        "font": 16,
+        "id": "nombre"
+      },
+      {
+        "font": 16,
+        "id": "correo"
+      },
+      {
+        "font": 16,
+        "id": "contrasena"
+      },
+      {
+        "font": 16,
+        "id": "confirmacion"
+      }
+    ],
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "width": 844,
+    "height": 390,
+    "route": "carrito.php",
+    "overflow": false,
+    "brandOverlap": false,
+    "inputs": [],
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "height": 960,
+    "route": "index.php",
+    "overflow": false,
+    "brandOverlap": false,
+    "inputs": [],
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "height": 960,
+    "route": "menu.php",
+    "overflow": false,
+    "brandOverlap": false,
+    "inputs": [],
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "height": 960,
+    "route": "nosotros.php",
+    "overflow": false,
+    "brandOverlap": false,
+    "inputs": [],
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "height": 960,
+    "route": "productos.php",
+    "overflow": false,
+    "brandOverlap": false,
+    "inputs": [
+      {
+        "font": 14,
+        "id": "buscador"
+      }
+    ],
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "height": 960,
+    "route": "login.php",
+    "overflow": false,
+    "brandOverlap": false,
+    "inputs": [
+      {
+        "font": 16,
+        "id": "correo"
+      },
+      {
+        "font": 16,
+        "id": "contrasena"
+      }
+    ],
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "height": 960,
+    "route": "registro.php",
+    "overflow": false,
+    "brandOverlap": false,
+    "inputs": [
+      {
+        "font": 16,
+        "id": "nombre"
+      },
+      {
+        "font": 16,
+        "id": "correo"
+      },
+      {
+        "font": 16,
+        "id": "contrasena"
+      },
+      {
+        "font": 16,
+        "id": "confirmacion"
+      }
+    ],
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "height": 960,
+    "route": "carrito.php",
+    "overflow": false,
+    "brandOverlap": false,
+    "inputs": [],
+    "broken": 0,
+    "errors": []
+  }
+]

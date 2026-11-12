@@ -1,0 +1,14 @@
+{
+  "fecha": "2026-11-11",
+  "base": "http://127.0.0.1:8876",
+  "paginas_revisadas": 10,
+  "anchos": [
+    320,
+    390,
+    768,
+    1024,
+    1440
+  ],
+  "desbordes": [],
+  "errores_js_o_gatos_repetidos": []
+}

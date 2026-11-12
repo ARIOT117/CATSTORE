@@ -1,0 +1,107 @@
+{
+  "personajes_unicos": 14,
+  "vistas_matriz_inicial": 40,
+  "vistas_revision_final": 16,
+  "revision_final": {
+    "characters": 14,
+    "views": [
+      {
+        "width": 1440,
+        "route": "index.php",
+        "overflow": false,
+        "broken": []
+      },
+      {
+        "width": 1440,
+        "route": "menu.php",
+        "overflow": false,
+        "broken": []
+      },
+      {
+        "width": 1440,
+        "route": "nosotros.php",
+        "overflow": false,
+        "broken": []
+      },
+      {
+        "width": 1440,
+        "route": "productos.php",
+        "overflow": false,
+        "broken": []
+      },
+      {
+        "width": 1440,
+        "route": "login.php",
+        "overflow": false,
+        "broken": []
+      },
+      {
+        "width": 1440,
+        "route": "registro.php",
+        "overflow": false,
+        "broken": []
+      },
+      {
+        "width": 1440,
+        "route": "carrito.php",
+        "overflow": false,
+        "broken": []
+      },
+      {
+        "width": 1440,
+        "route": "fuentes.php",
+        "overflow": false,
+        "broken": []
+      },
+      {
+        "width": 390,
+        "route": "index.php",
+        "overflow": false,
+        "broken": []
+      },
+      {
+        "width": 390,
+        "route": "menu.php",
+        "overflow": false,
+        "broken": []
+      },
+      {
+        "width": 390,
+        "route": "nosotros.php",
+        "overflow": false,
+        "broken": []
+      },
+      {
+        "width": 390,
+        "route": "productos.php",
+        "overflow": false,
+        "broken": []
+      },
+      {
+        "width": 390,
+        "route": "login.php",
+        "overflow": false,
+        "broken": []
+      },
+      {
+        "width": 390,
+        "route": "registro.php",
+        "overflow": false,
+        "broken": []
+      },
+      {
+        "width": 390,
+        "route": "carrito.php",
+        "overflow": false,
+        "broken": []
+      },
+      {
+        "width": 390,
+        "route": "fuentes.php",
+        "overflow": false,
+        "broken": []
+      }
+    ],
+    "errors": []
+  }
+}

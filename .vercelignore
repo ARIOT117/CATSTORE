@@ -1,0 +1,14 @@
+.git
+.superdesign
+.agents
+.codex
+.aws
+.env
+.env.*
+config.local.php
+**/*.php
+data
+scripts
+docs
+*.sql
+*.zip

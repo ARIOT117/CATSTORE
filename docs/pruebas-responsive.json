@@ -1,0 +1,282 @@
+[
+  {
+    "width": 1440,
+    "route": "index.php",
+    "overflow": false,
+    "broken": [],
+    "h1": "Un cafecito.Un antojo.Muchos michis.",
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "route": "menu.php",
+    "overflow": false,
+    "broken": [],
+    "h1": "Un sorbito de felicidad.",
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "route": "nosotros.php",
+    "overflow": false,
+    "broken": [],
+    "h1": "Donde el caféencuentra compañía.",
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "route": "productos.php",
+    "overflow": false,
+    "broken": [],
+    "h1": "Para el michique te espera en casa.",
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "route": "login.php",
+    "overflow": false,
+    "broken": [],
+    "h1": "Qué gustoverte por aquí.",
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "route": "registro.php",
+    "overflow": false,
+    "broken": [],
+    "h1": "Un lugar para ti.Y para tus favoritos.",
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "route": "carrito.php",
+    "overflow": false,
+    "broken": [],
+    "h1": "Su próxima alegría.",
+    "errors": []
+  },
+  {
+    "width": 1024,
+    "route": "index.php",
+    "overflow": false,
+    "broken": [],
+    "h1": "Un cafecito.Un antojo.Muchos michis.",
+    "errors": []
+  },
+  {
+    "width": 1024,
+    "route": "menu.php",
+    "overflow": false,
+    "broken": [],
+    "h1": "Un sorbito de felicidad.",
+    "errors": []
+  },
+  {
+    "width": 1024,
+    "route": "nosotros.php",
+    "overflow": false,
+    "broken": [],
+    "h1": "Donde el caféencuentra compañía.",
+    "errors": []
+  },
+  {
+    "width": 1024,
+    "route": "productos.php",
+    "overflow": false,
+    "broken": [],
+    "h1": "Para el michique te espera en casa.",
+    "errors": []
+  },
+  {
+    "width": 1024,
+    "route": "login.php",
+    "overflow": false,
+    "broken": [],
+    "h1": "Qué gustoverte por aquí.",
+    "errors": []
+  },
+  {
+    "width": 1024,
+    "route": "registro.php",
+    "overflow": false,
+    "broken": [],
+    "h1": "Un lugar para ti.Y para tus favoritos.",
+    "errors": []
+  },
+  {
+    "width": 1024,
+    "route": "carrito.php",
+    "overflow": false,
+    "broken": [],
+    "h1": "Su próxima alegría.",
+    "errors": []
+  },
+  {
+    "width": 768,
+    "route": "index.php",
+    "overflow": false,
+    "broken": [],
+    "h1": "Un cafecito.Un antojo.Muchos michis.",
+    "errors": []
+  },
+  {
+    "width": 768,
+    "route": "menu.php",
+    "overflow": false,
+    "broken": [],
+    "h1": "Un sorbito de felicidad.",
+    "errors": []
+  },
+  {
+    "width": 768,
+    "route": "nosotros.php",
+    "overflow": false,
+    "broken": [],
+    "h1": "Donde el caféencuentra compañía.",
+    "errors": []
+  },
+  {
+    "width": 768,
+    "route": "productos.php",
+    "overflow": false,
+    "broken": [],
+    "h1": "Para el michique te espera en casa.",
+    "errors": []
+  },
+  {
+    "width": 768,
+    "route": "login.php",
+    "overflow": false,
+    "broken": [],
+    "h1": "Qué gustoverte por aquí.",
+    "errors": []
+  },
+  {
+    "width": 768,
+    "route": "registro.php",
+    "overflow": false,
+    "broken": [],
+    "h1": "Un lugar para ti.Y para tus favoritos.",
+    "errors": []
+  },
+  {
+    "width": 768,
+    "route": "carrito.php",
+    "overflow": false,
+    "broken": [],
+    "h1": "Su próxima alegría.",
+    "errors": []
+  },
+  {
+    "width": 390,
+    "route": "index.php",
+    "overflow": false,
+    "broken": [],
+    "h1": "Un cafecito.Un antojo.Muchos michis.",
+    "errors": []
+  },
+  {
+    "width": 390,
+    "route": "menu.php",
+    "overflow": false,
+    "broken": [],
+    "h1": "Un sorbito de felicidad.",
+    "errors": []
+  },
+  {
+    "width": 390,
+    "route": "nosotros.php",
+    "overflow": false,
+    "broken": [],
+    "h1": "Donde el caféencuentra compañía.",
+    "errors": []
+  },
+  {
+    "width": 390,
+    "route": "productos.php",
+    "overflow": false,
+    "broken": [],
+    "h1": "Para el michique te espera en casa.",
+    "errors": []
+  },
+  {
+    "width": 390,
+    "route": "login.php",
+    "overflow": false,
+    "broken": [],
+    "h1": "Qué gustoverte por aquí.",
+    "errors": []
+  },
+  {
+    "width": 390,
+    "route": "registro.php",
+    "overflow": false,
+    "broken": [],
+    "h1": "Un lugar para ti.Y para tus favoritos.",
+    "errors": []
+  },
+  {
+    "width": 390,
+    "route": "carrito.php",
+    "overflow": false,
+    "broken": [],
+    "h1": "Su próxima alegría.",
+    "errors": []
+  },
+  {
+    "width": 320,
+    "route": "index.php",
+    "overflow": false,
+    "broken": [],
+    "h1": "Un cafecito.Un antojo.Muchos michis.",
+    "errors": []
+  },
+  {
+    "width": 320,
+    "route": "menu.php",
+    "overflow": false,
+    "broken": [],
+    "h1": "Un sorbito de felicidad.",
+    "errors": []
+  },
+  {
+    "width": 320,
+    "route": "nosotros.php",
+    "overflow": false,
+    "broken": [],
+    "h1": "Donde el caféencuentra compañía.",
+    "errors": []
+  },
+  {
+    "width": 320,
+    "route": "productos.php",
+    "overflow": false,
+    "broken": [],
+    "h1": "Para el michique te espera en casa.",
+    "errors": []
+  },
+  {
+    "width": 320,
+    "route": "login.php",
+    "overflow": false,
+    "broken": [],
+    "h1": "Qué gustoverte por aquí.",
+    "errors": []
+  },
+  {
+    "width": 320,
+    "route": "registro.php",
+    "overflow": false,
+    "broken": [],
+    "h1": "Un lugar para ti.Y para tus favoritos.",
+    "errors": []
+  },
+  {
+    "width": 320,
+    "route": "carrito.php",
+    "overflow": false,
+    "broken": [],
+    "h1": "Su próxima alegría.",
+    "errors": []
+  }
+]

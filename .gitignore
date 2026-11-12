@@ -1,4 +1,18 @@
-.vercel/
+config.local.php
 .env
 .env.*
-.DS_Store
+.vercel/
+*.log
+
+# Metadatos locales y herramientas de diseño.
+.superdesign/
+.agents/
+.codex/
+.aws/
+__pycache__/
+*.pyc
+
+# Fotos privadas: solo se versionan las protecciones de la carpeta.
+data/mascotas/*
+!data/mascotas/.htaccess
+!data/mascotas/index.html
