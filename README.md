@@ -196,4 +196,4 @@ La simplificación posterior se documenta en `docs/revision-premium.md`. La guí
 
 El despliegue PHP/MySQL está preparado para Railway con `Dockerfile`, `railway.json` y `deployment/`. Consulta `docs/railway.md` para las referencias de MySQL, los volúmenes y las comprobaciones. Las credenciales locales y fotos privadas quedan fuera de Git y de la imagen Docker.
 
-Vercel se mantiene pausado para las nuevas versiones PHP mediante `vercel.json`; su publicación anterior no representa el backend completo. La web completa se entrega desde el alojamiento PHP una vez configurado y verificado.
+Vercel se mantiene pausado para las nuevas versiones PHP mediante `vercel.json`; su publicación anterior no representa el backend completo. La web completa, con PHP/MySQL, está publicada en https://web-production-1899fab5.up.railway.app. Las pruebas funcionales públicas y 21 vistas de móvil/escritorio pasan; detalles en `docs/railway.md`. Railway usa crédito de prueba y su disponibilidad depende del saldo.

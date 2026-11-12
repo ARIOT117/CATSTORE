@@ -2,7 +2,9 @@
 
 ## Estado
 
-La aplicación está preparada para un servicio PHP/Apache y un servicio MySQL. No hay credenciales en el código. La creación de recursos y la publicación real requieren conectar una cuenta Railway y comprobar antes el crédito y los límites disponibles.
+Publicada el 11 de noviembre de 2026 (Chihuahua): https://web-production-1899fab5.up.railway.app
+
+Proyecto Railway: `snacks-and-cats`. Servicios `web` (PHP 8.3/Apache) y `MySQL`, con volúmenes independientes de 500 MB. Código en `ARIOT117/CATSTORE`, rama `main`. No hay credenciales en el código. La cuenta se verificó en prueba, con $5 de crédito inicial, 30 días y sin método de pago; no se activó una suscripción de pago.
 
 El objetivo de esta entrega es una demostración escolar de 2–3 días. Eso no garantiza consumo gratuito: debe revisarse la cuenta antes de crear servicios y después de publicarlos. No se debe activar un plan de pago ni añadir recursos si exceden lo autorizado por Diego.
 
@@ -35,7 +37,7 @@ En la instalación XAMPP nada cambia: si `CATSTORE_UPLOAD_DIR` no existe, las fo
 
 ## Arranque y dominio
 
-El contenedor espera a MySQL y ejecuta el instalador idempotente. Solo crea tablas/semillas que faltan; no borra cuentas ni pedidos. Apache escucha el puerto asignado por Railway y reconoce HTTPS terminado por su proxy. La comprobación de salud usa `/login.php`.
+El contenedor espera a MySQL y ejecuta el instalador idempotente. Solo crea tablas/semillas que faltan; no borra cuentas ni pedidos. Apache escucha el puerto asignado por Railway y reconoce HTTPS terminado por su proxy. La comprobación de salud usa `/`. El arranque desactiva explícitamente los módulos event/worker para evitar un conflicto con prefork observado en el runtime; la configuración se valida antes de iniciar Apache.
 
 Una vez listo el servicio, generar un dominio público de Railway en Networking y confirmar que abre con HTTPS. Este será el enlace completo para el profesor; no hace falta comprar un dominio.
 
@@ -56,7 +58,18 @@ Una vez listo el servicio, generar un dominio público de Railway en Networking 
 - Sintaxis PHP/JS y recursos: pasan.
 - Sintaxis de `deployment/entrypoint.sh`: pasa.
 - Pruebas HTTP con `CATSTORE_UPLOAD_DIR` en un directorio fuera de la web: pasan (sesión, fotos, validación MIME/CSRF, pedidos y CSV).
-- No hay Docker disponible en este entorno: la construcción de la imagen y la validación de Apache/HTTPS deben completarse durante el primer despliegue. No se afirma que la web ya esté publicada.
+- La imagen Docker se construyó en Railway y Apache respondió correctamente por HTTPS.
+
+## Verificaciones en la URL pública
+
+- Pruebas HTTP completas: registro/login/logout, CSRF, carrito, precios del servidor, cantidades, pedidos idempotentes, aislamiento entre cuentas y CSV: pasan.
+- Fotos privadas: carga, MIME falso, CSRF, acceso del propietario y eliminación: pasan.
+- Cookies Secure y HttpOnly verificadas; SameSite=Lax configurado por PHP.
+- Navegador Chromium: siete páginas en 1440, 390 y 320 px (21 vistas), sin desbordamientos.
+- Tras redesplegar ambos servicios, la misma sesión recuperó la cuenta, el registro y el archivo privado; la foto de prueba se eliminó después de comprobarlo.
+- Pruebas hechas con cuentas ficticias y pedidos de demostración; no se cobran compras.
+- MySQL configurado con buffer InnoDB de 64 MB y máximo 30 conexiones para esta demostración.
+- El crédito limita la disponibilidad: no se garantiza duración exacta ni alojamiento permanente gratuito. Revisar Usage en Railway después de la evaluación.
 
 ## Fuentes oficiales
 

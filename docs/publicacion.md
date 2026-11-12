@@ -33,6 +33,10 @@ Con acceso CLI, `php scripts/instalar.php` prepara tablas y datos semilla sin bo
 
 ## Railway
 
+URL completa: https://web-production-1899fab5.up.railway.app
+
+Desplegada y probada con PHP/MySQL y volúmenes persistentes. Detalles y comprobaciones en [railway.md](railway.md). La URL anterior de Vercel conserva la presentación antigua.
+
 Railway puede ejecutar PHP y un servicio MySQL. Se debe revisar primero la elegibilidad de la cuenta y el crédito disponible. La prueba y el plan Free tienen límites de consumo y almacenamiento; no garantizan alojamiento permanente de esta aplicación sin coste.
 
 Fuentes oficiales revisadas: https://railway.com/pricing y https://docs.railway.com/pricing/free-trial. La omisión de builds de Vercel se documenta en https://vercel.com/kb/guide/how-do-i-use-the-ignored-build-step-field-on-vercel.
