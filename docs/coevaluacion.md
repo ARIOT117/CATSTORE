@@ -1,6 +1,6 @@
 # Coevaluación de Snacks and Cats
 
-Abre la dirección de `URL.txt`. Las pruebas en Railway se hicieron sobre la versión publicada el 12 de noviembre de 2026. Consulta el informe de entrega para identificar las diferencias con el ZIP.
+Abre la dirección de `URL.txt`. Las pruebas de referencia en Railway se hicieron sobre la versión publicada el 12 de noviembre de 2026. Consulta el informe de entrega para reproducirlas y comprobar la versión del ZIP.
 
 | Criterio | Acción en la URL publicada | Resultado esperado | Comprobé realmente y pendiente |
 | --- | --- | --- | --- |
