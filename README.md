@@ -2,6 +2,8 @@
 
 Sitio PHP de una cafetería gatuna en Chihuahua. Incluye el menú, la ubicación, una tienda de demostración, cuentas, carrito persistente, pedidos y foto privada de perfil.
 
+**Sitio en vivo:** https://web-production-1899fab5.up.railway.app/
+
 ## Ejecutar en local
 
 Usa PHP 8.2 o posterior con PDO MySQL, mbstring y fileinfo. cURL se usa para actualizar el catálogo desde la API. MySQL 8 o MariaDB de XAMPP sirven como base. En XAMPP para Linux, sustituye `php` por `/opt/lampp/bin/php` si hace falta. Ejecuta los comandos desde la raíz del proyecto.
