@@ -5,8 +5,8 @@ if (PHP_SAPI !== 'cli') {
     http_response_code(404);
     exit();
 }
-require dirname(__DIR__) . '/auth.php';
-require dirname(__DIR__) . '/data/menu-repositorio.php';
+require dirname(__DIR__) . '/app/auth.php';
+require dirname(__DIR__) . '/app/menu-repositorio.php';
 try {
     $db = obtenerConexion();
     $db->exec(file_get_contents(__DIR__ . '/../data/schema-menu.sql'));

@@ -59,7 +59,7 @@ if (realpath($_SERVER['SCRIPT_FILENAME'] ?? '') === __FILE__) {
         http_response_code(404);
         exit();
     }
-    require dirname(__DIR__) . '/auth.php';
+    require dirname(__DIR__) . '/app/auth.php';
     try {
         reforzarIntegridad(obtenerConexion());
         echo "Relaciones con usuarios verificadas.\n";

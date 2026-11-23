@@ -9,8 +9,13 @@ RUN apt-get update \
     && rm -rf /var/lib/apt/lists/*
 
 COPY deployment/apache.conf /etc/apache2/conf-available/snacks.conf
-RUN a2enconf snacks && apache2ctl -t
-COPY --chown=www-data:www-data . /var/www/html/
+RUN sed -i 's|DocumentRoot /var/www/html|DocumentRoot /var/www/html/public|' /etc/apache2/sites-available/000-default.conf \
+    && a2enconf snacks
+COPY public/ /var/www/html/public/
+COPY app/ /var/www/html/app/
+COPY data/ /var/www/html/data/
+COPY scripts/ /var/www/html/scripts/
+RUN apache2ctl -t
 COPY deployment/entrypoint.sh /usr/local/bin/snacks-start
 RUN chmod 755 /usr/local/bin/snacks-start \
     && mkdir -p /var/lib/snacks/uploads /var/lib/snacks/sessions \

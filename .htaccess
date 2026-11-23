@@ -1,5 +1,7 @@
-DirectoryIndex index.php
+# Compatibilidad con Apache/XAMPP al usar el proyecto como subcarpeta de htdocs.
 Options -Indexes
-<FilesMatch "^(config\..*\.php|auth\.php|app\.php|README\.md|REPORTE\.md)$">
-    Require all denied
-</FilesMatch>
+RewriteEngine On
+RewriteRule ^$ public/index.php [END]
+RewriteRule ^((?:index|menu|nosotros|productos|login|registro|carrito|pedidos|fuentes|acciones|mascota|comprobante)\.php)$ public/$1 [END]
+RewriteRule ^((?:CSS|JS|assets)/.+\.(?:css|js|woff2?|ico|jpeg|jpg|png|webp))$ public/$1 [END]
+RewriteRule ^ - [R=404,L]

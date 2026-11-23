@@ -1,18 +1,51 @@
-config.local.php
+# Configuración local, secretos y credenciales de equipo.
 .env
 .env.*
-.vercel/
-*.log
+!.env.example
+/config.local.php
+/config/config.local.php
+/.aws/
+*.key
+*.pem
 
-# Metadatos locales y herramientas de diseño.
-.superdesign/
-.agents/
-.codex/
-.aws/
+# Editor, herramientas locales y dependencias de pruebas instaladas.
+.vscode/
+.idea/
+.DS_Store
+*.swp
+*.swo
+/.superdesign/
+/.codex/
+/.agents/
+/.omx/
+/.vercel/
+/node_modules/
+
+# Registros y archivos temporales.
+*.log
+*.tmp
+*.bak
+*.orig
+*~
 __pycache__/
 *.pyc
+.pytest_cache/
+/data/catalogo-*
+/test-results/
+/playwright-report/
 
-# Fotos privadas: solo se versionan las protecciones de la carpeta.
-data/mascotas/*
-!data/mascotas/.htaccess
-!data/mascotas/index.html
+# Estado de ejecución y respaldos privados, separados del SQL y los datos semilla.
+/storage/
+/backups/
+/data/runtime/
+*.sqlite
+*.sqlite3
+*.sqlite-wal
+*.sqlite-shm
+/data/mascotas/*
+!/data/mascotas/.htaccess
+!/data/mascotas/index.html
+
+# Empaquetados locales.
+/entregables/
+*.zip
