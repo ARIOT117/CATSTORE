@@ -5,8 +5,8 @@ if (PHP_SAPI !== 'cli') {
     http_response_code(404);
     exit();
 }
-require dirname(__DIR__) . '/auth.php';
-require dirname(__DIR__) . '/data/menu-repositorio.php';
+require dirname(__DIR__) . '/app/auth.php';
+require dirname(__DIR__) . '/app/menu-repositorio.php';
 require __DIR__ . '/integridad.php';
 try {
     $c = configuracion();
@@ -53,7 +53,7 @@ try {
         STDERR,
         'No se pudo instalar: ' .
             $e->getMessage() .
-            "\nEnciende MySQL de XAMPP y revisa config.local.php.\n",
+            "\nEnciende MySQL de XAMPP y revisa config/config.local.php o las variables de entorno.\n",
     );
     exit(1);
 }

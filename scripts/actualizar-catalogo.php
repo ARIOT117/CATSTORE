@@ -5,7 +5,7 @@ if (PHP_SAPI !== 'cli') {
     http_response_code(404);
     exit();
 }
-require dirname(__DIR__) . '/auth.php';
+require dirname(__DIR__) . '/app/auth.php';
 $root = dirname(__DIR__);
 $url =
     'https://world.openpetfoodfacts.org/api/v2/search?categories_tags=en%3Acat-foods&page_size=24&fields=code,product_name,product_name_es,brands,image_front_url,categories_tags,quantity';
